@@ -27,7 +27,7 @@ personagem = input("Digite o nome em inglês do personagem: \n")
 requisicao = "\v1\public\characters?name=" + personagem + "&orderBy=name&limit=1" # oque queremos da requisicao
 
 #Juntando todas as partes da URL
-URL = base + requisicao + "&ts" + ts + "&apikey" + publica + "&hash=" + hasht
+URL = base + requisicao + "&ts=" + ts + "&apikey=" + publica + "&hash=" + hasht
 #Fazendo a requisição
 
 dados = requests.get(URL).json()  
