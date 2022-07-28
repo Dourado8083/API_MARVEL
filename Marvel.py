@@ -35,7 +35,6 @@ dados = requests.get(URL).json()
 #Verificia se existe uma descrição dentro dos dados recebidos 
 
 try:
-   # descricao = dados["data"]["results"][0]["description"]
    descricao = dados["data"]["results"][0]["description"]
 except:
     exit("Você digitou um personagem inválido")
